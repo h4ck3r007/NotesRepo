@@ -1,0 +1,100 @@
+HTML5 Canvas : A short primer
+==============================
+
+Introduction: 
+--------------
+HTML5 has introduced the canvas element which can be used to render graphs, images or other visual animations on the fly. Canvas is a rectangular area which allows javascript to render the drawing over it. Canvas does not have border by default but you can draw border around it.
+
+Canvas element is created in HTML using <canvas> HTML tag like following code
+
+-------------------------Code---------------------------
+|       <canvas width="300" height="225"></canvas>     |
+-------------------------Code---------------------------
+
+The above code create a canvas of size 300x225.
+
+
+
+
+Drawing in Canvas:
+-------------------
+Canvas can be used to draw the objects using javascript. Let's draw rectangle in canvas.
+
+First let's create a canvas in HTML body.
+-------------------------Code---------------------------
+|<canvas id="canvas" width="300" height="225"></canvas>|
+-------------------------Code---------------------------
+
+Now let's use javascript to draw the rectangle. Here is javascript code to do so.
+-------------------------Code----------------------------
+|	//Find canvas element								|
+|	var canvas = document.getElementById('canvas');		|
+|	//Get handle of drawing object						|
+|	var ctx = canvas.getContext('2d');					|
+|	//Set fill style									|
+|	ctx.fillStyle = "#FF0000";							|
+|	//Draw rectangle									|
+|	ctx.fillRect(0,0,200,200);							|
+------------------------Code-----------------------------
+
+Let's understand the code.
+ First code line get the handle of canvas element on the page.
+ Second code line get the drawing context from canvas. Drawing context has all the functions to draw the shapes.
+ Third code line tells the color used to fill the rectangle. Default color is black. We are setting the red color to draw red rectangle.
+ Fourth code line goes and draw the filled rectangle with red color.
+ 
+ Let's now draw the line
+ 
+ -------------------------Code----------------------------
+|	//Find canvas element								|
+|	var canvas = document.getElementById('canvas');		|
+|	//Get handle of drawing object						|
+|	var ctx = canvas.getContext('2d');					|
+|	//Set fill style									|
+|	ctx.fillStyle = "#FF0000";							|
+|	//Draw line											|
+|	ctx.moveTo(0,0);									|
+|	ctx.lineTo(200,200);								|
+|	ctx.stroke();										|
+------------------------Code-----------------------------
+ 
+ Fourth code line moves the pointer to (0,0).
+ Fifth code line draws line from (0,0) to (200,200).
+ Before you write the sixth line all this is in memory but actual drawing happens when you call stroke() method.
+ 
+ 
+ 
+ 
+Gradient Colors:
+----------------
+Canvas also supports color gradient. You can draw rectangle or line with color gradient. You need to set the fill style of gradient instead of color.
+
+To draw a rectangle with gradient here is code.
+-------------------------Code----------------------------
+|	//Find canvas element								|
+|	var canvas = document.getElementById('canvas');		|
+|	//Get handle of drawing object						|
+|	var ctx = canvas.getContext('2d');					|
+|	//Create a gradient object							|
+|	var grad = ctx.createLinearGradient(0,0,200,200);	|
+|	//Set the color of gradient							|
+|	grad.addColorStop(0,"red");							|
+|	grad.addColorStop(1,"blue");						|
+|	//Set fill style									|
+|	ctx.fillStyle = grad;								|
+|	//Draw rectangle									|
+|	ctx.fillRect(0,0,200,200);							|
+------------------------Code-----------------------------
+
+Third code line create the linear gradient.
+Fourth and fifth code line mentions the color gradient from red to blue.
+Sixth code line sets the gradient and last code line draws rectangle with the gradient.
+
+
+
+
+References:
+1. LET’S CALL IT A DRAW(ING SURFACE) http://diveintohtml5.info/canvas.html
+2. Mozilla Developer Network Canvas Tutorial https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial
+3. HTML5 Canvas — the Basics https://dev.opera.com/articles/html5-canvas-basics/
+4. HTML5 Canvas Tutorial http://www.html5canvastutorials.com/
