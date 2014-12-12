@@ -1,0 +1,3 @@
+ToDo
+1. http://www2.pubnub.com/html5app?utm_source=html5weekly&utm_medium=email
+2. WebSocket : http://www.html5rocks.com/en/tutorials/websockets/basics/

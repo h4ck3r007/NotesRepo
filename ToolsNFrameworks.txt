@@ -1,0 +1,7 @@
+
+
+
+JVM Application Development Frameworks
+======================================
+Griffon : http://griffon.codehaus.org/
+	Griffon is an application framework for developing desktop applications in the JVM, with Groovy being the primary language of choice. 

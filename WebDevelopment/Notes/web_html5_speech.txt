@@ -1,0 +1,5 @@
+Web Speech API 
+References
+1.http://www.smashingmagazine.com/2014/12/05/enhancing-ux-with-the-web-speech-api/?utm_source=html5weekly&utm_medium=email
+2.https://www.google.com/intl/en/chrome/demos/speech.html
+3.http://codepen.io/Rumyra/pen/bCphe
