@@ -1,3 +1,32 @@
+Web Speech API : A short primer
+==============================
+Introduction: 
+--------------
+Web speech API enable browser to read out text as well as listen to the end user and convert it to the text. This technology is still new and supported by not all browsers. Chrome supports both read out and listen to end user. We will explore about how we can use this technology.
+
+Read out the text
+-------------------
+To read out text create a new instance of SpeechSynthesisUtterance  and pass the text you want it to read and then call the method  window.speechSynthesis.speak with the instance of SpeechSynthesisUtterance.
+
+Here is the code for same.
+--------------------------------------Code------------------------------------------|
+|	function speak(textToSpeak){													|
+|		//Create a new instance of newSpeechSynthesisUtterance						|
+|		var newSpeechSynthesisUtterance = new SpeechSynthesisUtterance();			|
+|		//Set the text to speak 													|
+|		newSpeechSynthesisUtterance.text = textToSpeak;								|
+|		//Speak now																	|
+|		window.speechSynthesis.speak(newSpeechSynthesisUtterance);					|
+|	} 																				|	
+--------------------------------------Code------------------------------------------|
+
+Listen out end user
+-------------------
+Chrome supports to listen out the end user and convert it to text.
+
+Here is the code for same.
+
+
 Web Speech API 
 References
 1.http://www.smashingmagazine.com/2014/12/05/enhancing-ux-with-the-web-speech-api/?utm_source=html5weekly&utm_medium=email

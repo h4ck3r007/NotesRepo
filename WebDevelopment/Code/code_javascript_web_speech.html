@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Web Speech API </title>
+	</head>
+	<body>
+		<input id="speakTxt" value="Enter text to speak"></input>
+		<button id="speakButton" onclick="speak(document.getElementById('speakTxt').value);">Click Me To Hear</button>
+		<script type="text/javascript">
+			function speak(textToSpeak){
+				//Create a new instance of SpeechSynthesisUtterance
+				var newSpeechSynthesisUtterance = new SpeechSynthesisUtterance();
+				//Set the text to speak
+				newSpeechSynthesisUtterance.text = textToSpeak;
+				//Speak now
+				window.speechSynthesis.speak(newSpeechSynthesisUtterance);
+			}
+		</script>
+	</body>
+</html>
