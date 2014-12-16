@@ -9,19 +9,24 @@
 
 		<script type="text/javascript">
 
-
-			var recordedMsg = "";
+			//Recorded message here
+			var recordedMsg = "";speech recognition
+			//Create a new instance for 
 			var newRecognition = new webkitSpeechRecognition();
 			newRecognition.continuous = true;
 
-
+			//Call to start recording
 			function startRecording(){
+				//Change the button text to STOP
 				document.getElementById("action").innerHTML="Stop";
 
+				//Start recording
 				newRecognition.start();
+				//Attache event
 				newRecognition.onresult = function(event){
 						var resultsLength = event.results.length -1 ;
 						var ArrayLength = event.results[resultsLength].length -1;
+						//Store the recording in recordedMsg
 						recordedMsg += event.results[resultsLength][ArrayLength].transcript;
 				};
 
@@ -32,15 +37,22 @@
 
 			}
 
+			//Call to end recording
 			function stopRecording(){
+				//Change the button text to START
 				document.getElementById("action").innerHTML="Start";
+				//Stop recording
 				newRecognition.stop();
+				
+				//Add text element to update the recorded message in DOM
 				var txtNode = document.createElement('div');
 				txtNode.innerHTML = recordedMsg;
 				document.getElementById('msgList').appendChild(txtNode);
+				//Reset the recorded message
 				recordedMsg = "";
 			}
 
+			//Toggle recording
 			function toggleRecording(){
 				if(document.getElementById("action").innerHTML=="Start")
 					startRecording();

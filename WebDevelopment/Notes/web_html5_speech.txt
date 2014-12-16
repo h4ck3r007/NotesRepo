@@ -24,7 +24,24 @@ Listen out end user
 -------------------
 Chrome supports to listen out the end user and convert it to text.
 
-Here is the code for same.
+Here is the code for same that works in chrome.
+
+--------------------------------------Code------------------------------------------|
+|	//Create a new instance of webkitSpeechRecognition								|
+|	var newRecognition = new webkitSpeechRecognition();								|
+|	newRecognition.continuous = true;												|
+| 	//Start Recording																|
+|	newRecognition.start();															|
+|	//Attach event onresult															|
+|	newRecognition.onresult = function(event){										|
+|		var resultsLength = event.results.length ;									|
+|		var ArrayLength = event.results[resultsLength].length -1;					|
+|		//Save recording in recorded message										|
+|		recordedMsg += event.results[resultsLength][ArrayLength].transcript;		|
+|	};																				|
+--------------------------------------Code------------------------------------------|
+
+Complete working code can be found GitHub Repo https://github.com/h4ck3r007/NotesRepo/blob/master/WebDevelopment/Code/code_javascript_webspeechrecognition.html .
 
 
 Web Speech API 
