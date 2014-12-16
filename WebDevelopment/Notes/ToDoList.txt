@@ -1,3 +1,9 @@
 ToDo
 1. http://www2.pubnub.com/html5app?utm_source=html5weekly&utm_medium=email
 2. WebSocket : http://www.html5rocks.com/en/tutorials/websockets/basics/
+
+http://www.goodreads.com/quotes/tag/learning
+http://www.uniqueteachingresources.com/Quotes-About-Learning.html
+http://www.corejavainterviewquestions.com/idiots-guide-big-o/
+http://jaxenter.com/jax-magazine
+https://vaadin.com/blog/-/blogs/bdd-with-vaadin-testbench-4

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Speech Recognition Demo</title>
+	</head>
+	<body ">
+		<button id="action" onclick="toggleRecording();">Start</button>
+		<div id="msgList"></div>
+
+		<script type="text/javascript">
+
+
+			var recordedMsg = "";
+			var newRecognition = new webkitSpeechRecognition();
+			newRecognition.continuous = true;
+
+
+			function startRecording(){
+				document.getElementById("action").innerHTML="Stop";
+
+				newRecognition.start();
+				newRecognition.onresult = function(event){
+						var resultsLength = event.results.length -1 ;
+						var ArrayLength = event.results[resultsLength].length -1;
+						recordedMsg += event.results[resultsLength][ArrayLength].transcript;
+				};
+
+				newRecognition.onerror = function(event){
+  					console.log('error?');
+ 					console.log(event);
+				};
+
+			}
+
+			function stopRecording(){
+				document.getElementById("action").innerHTML="Start";
+				newRecognition.stop();
+				var txtNode = document.createElement('div');
+				txtNode.innerHTML = recordedMsg;
+				document.getElementById('msgList').appendChild(txtNode);
+				recordedMsg = "";
+			}
+
+			function toggleRecording(){
+				if(document.getElementById("action").innerHTML=="Start")
+					startRecording();
+				else
+					stopRecording();
+			}
+
+
+		</script>
+	</body>
+</html>
