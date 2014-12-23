@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+	<title>Example page for media query</title>
+
+	<style type="text/css">
+		@media (max-width:640px){
+			div {
+				background : #FF0000;
+			}
+		}
+		@media (min-width:640px) and (max-width:1024px){
+			div {
+				background : #00FF00;
+			}
+		}
+		@media (min-width:1024px){
+			div {
+				background : #0000FF;
+			}
+		}
+	</style>
+
+	
+</head>
+<body>
+	<div>
+		Example for media query
+		<br>
+		Browser Width Between 0px and 200px   : Red Background
+		<br>
+		Browser Width Between 200px and 400px : Green Background
+		<br>
+		Browser Width More Than 400px         : Blue Background
+	</div>
+</body>

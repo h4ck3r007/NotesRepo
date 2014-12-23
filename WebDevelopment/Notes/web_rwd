@@ -1,0 +1,72 @@
+Responsive Web Design
+=====================
+
+Introduction
+=============
+Responsive web design is the an approach to design a web site that provide good user experience to end user irrespective of the browser or device used by user. If you are opening the web site over large screen like desktop it must be easy to use for user and same web site if it is opened on mobile device it should also be easy for user to use the web site. To ensure that user experience is good on different devices or browser sizes contents of website may be changed or adjusted based on the plateform used to view the web site. Look and feel of website may be different on desktop and it may be different on mobile or tabular device.
+
+It was Ethan Marcotte who first coined the term responsive web design in his article for A List Apart, in which
+he compares the web to architecture.
+
+Rather than tailoring disconnected designs to each of an ever-increasing number of web devices,
+we can treat them as facets of the same experience. We can design for an optimal viewing
+experience, but embed standards-based technologies into our designs to make them not only more
+flexible, but more adaptive to the media that renders them. In short, we need to practice responsive
+web design.1
+—Ethan Marcotte, A List Apart
+
+Why do we need responsive web design
+====================================
+<To Do> Put a graph for mobile usage with time
+
+
+How to test a responsive web site
+==================================
+Browser specific testing
+	Google Chrome : Tools --> Developer Tools (F12)
+		Emulation tab at bottom to indicate the device used.
+
+	Firefox : Developer Tools
+		Responsive Design View
+
+	Testing on a device simulator
+		Stats on http://gs.statcounter.com/
+		iPhone
+		Android
+		Windows
+
+		Firefox OS Simulator : about:app-manager
+
+	Online Solutions
+		www.perfectomobile.com : Test on connected real device
+		www.browserstack.com   : Test on simulators
+
+
+Using Media Queries
+===================
+Media queries allow the developer to select the specific CSS style based on the device capabilities.
+
+Media query can be split into two types of components 
+	Media Types
+	Media Expressions
+
+	Media Types : Ten media types defined in W3C
+	Media expressions : 
+
+	Sample Media Query : all and {max-width:767px}	Return true or false
+
+
+	Using media queries in CSS
+		Three Methods
+			Separate style sheets for each media query
+			Use @import in main CSS file to load CSS files conditionally
+			Use media queries inside CSS file
+
+	Method#1 : <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1023px) href="tablet.css" />
+	Method#2 : @import url("tablet.css") screen and (min-width: 768px) and (max-width: 1023px);
+	Method#3 : @media only screen and (min-width: 768px) and (max-width: 1023px){
+					/* Your styles. */
+				}
+
+	
+
