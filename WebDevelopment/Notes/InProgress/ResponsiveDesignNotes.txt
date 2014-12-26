@@ -1,0 +1,88 @@
+Responsive Design
+=============================
+RWD (Responsive Wed Design) is an approach to webdesign to craft website to provide optimal viewing experience on different browsers or devices seemlesly.
+
+Techniques used for responsive design are
+1. Fluid grid : Calls page element sizing to be percentage instead of pixels.
+2. Flexible images : Sizes in relative units.
+3. Media queries : Use CSS media queries
+
+
+ JavaScript frameworks like Modernizr, jQuery, and jQuery Mobile that can directly test browser support for HTML/CSS features
+ 
+ Tools to test responsive design
+ 1. Adobe Edge Inspector
+ 2. FF and Chrome console -->  responsive design viewport resizing tools  For FF  Tools > Web Developer > Web Design View
+ 
+ Thankfully, the W3C created media queries as part of the CSS3 specification, improving upon the promise of media types.
+ 
+ 
+ 
+ 
+Types of Layout
+	There are different types of layout for the web page
+		--> Fixed width layout	: When components of web page has fixed width irrespective of browser viewport size, it is called fixed width layout.
+		--> Elastic layout : In fixed layout component width is mentioned in pixels but in elastic layout it is mentioned in ems instead of pixel. The em unit is multiple of the font size.
+				Width in pixels / base font size = Width in em
+			The width of components are relative so increase/decrease in font size restructure the components on page.
+		--> Fluid layout : Fluid layouts are known as liquid layout or relative layouts. In this layout the width of components on web page are changed based on the browser viewport size to give best user experience.
+		
+
+Responsive design frameworks
+	Grid Systems
+		1. Fluidable (http://fluidable.com/)
+		2. CSS Smart Grid (http://dryan.github.io/css-smart-grid/)
+		3. csswizardry-grids (http://csswizardry.com/csswizardry-grids/)
+		
+	CSS Frameworks
+		1. Bootstrap
+		2. Zurb
+
+Tools and Workflows
+	CSS Preporicessors : LESS, SASS+Compass
+		Key Features
+			1. Variables
+			2. Nesting
+			3. Import external files
+			4. Extend existing styles
+			5. Mixins
+	
+	Bower : Package Manager
+	Grunt : Task Manager
+	Gulp : Build/Task Manager
+	
+	Scaffolding
+		Yeoman
+			Generators
+				1. webapp
+				2. angular
+				3. ember
+				4. backbone
+				5. chromeapp
+				6. chrome-extension
+				7. bootstrap
+
+
+
+	jshint : Detect error and potential problems in Javascript Code
+	serve : Node server serve. 
+	ios-sim : iOS Simulator
+	Mixture : Tools haveing scaffolding, preprocessing, testing, templating, building and deploying
+	
+	
+ 
+
+References
+1. http://en.wikipedia.org/wiki/Responsive_web_design
+2. http://alistapart.com/article/responsive-web-design
+3. http://css-tricks.com/video-screencasts/102-braindump-on-responsive-web-design/
+4. http://fitvidsjs.com/
+5. http://fittextjs.com/
+6. http://mediaqueri.es/
+7. https://developers.google.com/web/fundamentals/layouts/rwd-fundamentals/use-media-queries?hl=en
+
+
+To know more
+1. http://en.wikipedia.org/wiki/Unobtrusive_JavaScript?
+2. SASS http://en.wikipedia.org/wiki/Sass_(stylesheet_language)?
+3. http://responsivedeck.com/2013/02/top-10-best-responsive-web-design-books-for-web-designers-and-developers/

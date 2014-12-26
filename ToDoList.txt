@@ -1,0 +1,6 @@
+Firefox Add on : Measureit
+Chrome Inspector : Responsive Inspector   --> How media queries works? What is responsive design
+Emmet livestyle??
+Web developer checklist
+Devtool autosave  http://youtu.be/3pxf3Ju2row?t=18m24s
+Screencast: vimeo.com/33765496
