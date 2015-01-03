@@ -68,5 +68,14 @@ Media query can be split into two types of components
 					/* Your styles. */
 				}
 
+
+Fluid Layout
+================
+
+Types of layout
+	Fixed Layout
+	Elastic Layout
+	Fluid Layout
+
 	
 
