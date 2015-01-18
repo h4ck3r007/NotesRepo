@@ -1,0 +1,122 @@
+CSS Notes
+==========
+
+
+Text Formatting
+===============
+CSS Properties
+	font-family
+		Works only if font is available on client computer otherwise default web font is used.
+		Most recently web browsers start supporting web fonts, fonts that browser can download. This needs an additional CSS Command  called @font-face directive. 
+			Web Font Services : Google Fonts, TypeKit
+			Free Web Fonts
+				The League of Movable Type (www.theleagueofmoveabletype.com)
+				Exljbris font foundry (www.exljbris.com)
+				Fontex.org (www.fontex.org)
+				The Open Font Library (http://openfontlibrary.org)
+				Font Squirrel (www.fontsquirrel.com)
+				Google Fonts (www.google.com/webfonts)
+				
+			
+		Example :
+			p{
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			
+			Using Web Fonts
+			@font-face {
+				font-family: "League Gothic";
+				src: url('fonts/League_Gothic-webfont.ttf');
+				}
+			p {
+				font-family: "League Gothic";
+				}
+				
+				
+		Resources
+			using icon fonts: 
+				http://css-tricks.com/flat-icons-icon-fonts/
+				http://css-tricks.com/html-for-icon-font-usage/  
+				http://css-tricks.com/examples/IconFont/
+	
+	font-weight
+		Range 100-900
+	font-style
+	color
+		p{
+			color: red;
+		}
+		p{
+			color: #3f0000;
+		}
+		p{
+			color: rgb(100%,100%,0%);
+		}
+		p{
+			color: rgb(255,255,0);
+		}
+		p{
+			color: rgba(255,255,0,0.5);			#a for alpha opacity
+		}
+		p{
+			color: hsl(0,100%,50%);			#Red Color
+		}
+		
+		[ToDo] How HSL works?
+		
+		References
+			http://www.colourlovers.com/
+			HSL color picker at www.workwithcolor.com/hsl-color-schemer-01.htm.
+	
+	font-size
+		Units : keywords, ems, exs, pixels, percentages, picas, points, and even inches, centimeters, and millimeters
+		
+		[ToDo] What is Retina Display?
+	
+	text-transform
+		Change text to upper case or lower case
+	font-variant
+		To create small-cap text:       font-variant: small-caps;
+	text-decoration
+		Add various enhancements to text like overline, underline, line-through,blink etc..
+	letter-spacing
+	word-spacing
+	text-shadow
+		The text-shadow property requires four pieces of information: the horizontal offset
+(how far to the left or right of the text the shadow should appear), the vertical offset
+(how far above or below the text the shadow should appear), the blurriness of the
+shadow, and the color of the drop shadow.
+	line-height
+	text-align
+	text-indent
+	margin-top
+	margin-bottom
+	:first-letter
+	
+	
+	
+	===Blog====
+	
+	Image is more than a thousand words but still text has their own importance. Text allows us to understand the thoughts we want to communicate. CSS provides the functionality to format the text on web page. We will discuss about how text on page can be formatted using CSS.
+	
+	The font of the text on web page can be controlled through CSS using font-family, font-size, font-weight and font style property.
+	
+	Using font family we can set the font for the text. If font is available on client browser then the text is displayed in the requested font otherwise default web font will be used. Using font family we can give not only single font but list of fonts. If first font is not available then browser will check for second font in the list on client's computer and if no font in list is available then default font will be used to display the text.
+	
+	Here is example code to set the font for paragraph.
+	
+	p{
+		font-family : Arial, Helvetica, sans-serif;
+	}
+	
+	Most recently web browsers also started supporting the web fonts. Web fonts are fonts that are downloaded by the browser from given location for use. Using font-face CSS property you can set the location for the font to be downloaded.
+	
+	Here is example code to download web fonts
+
+	@font-face {
+		font-family: "League Gothic";
+		src: url('fonts/League_Gothic-webfont.ttf');
+	}
+	p {
+		font-family: "League Gothic";
+	}	

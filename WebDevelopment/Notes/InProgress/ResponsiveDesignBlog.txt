@@ -1,0 +1,101 @@
+When HTML is first proposed it was meant to share the plain text documents within researcher's group. Web pages made were really simple and has only static plain english text. With time support for images, audio, video etc different element kept on added in HTML spec. Pages became dynamic. Now a days HTML pages are much more complex compared to early days. Few years back these complex web pages are accessed mostly on desktops and in few of the browsers but with the increased use of mobile devices now web pages are getting traffic from mobile browsers also apart from desktop browsers. With time more and more request are coming from different kinds of mobile devices. With this trend the responsibility of web designer and developers has increased. They have to ensure that their web page work fine for all the users irrespective of devices or browsers they are using. To address this issue developer designed different pages for desktop and mobile but this approach does not scale. With so many variation in layout, screen size it is really difficult to design page that is suitable for all. Because of this challenge the term "Responsive Web Design" is coined.
+
+
+[TODO] Show the current mobile trend
+
+Responsive web design is an approach to develope the web pages that aims to provide the users of web site good experience irrespective of devices, browsers, layouts, screen sizes used. Websites designed using responsive web design approach take benefit from fluid grids, fluid context and CSS Media Queries. 
+
+It was Ethan Marcotte who first coined this term in A List Apart Article. Here is what how he defined the term.
+
+Rather than tailoring disconnected designs to each of an ever-increasing number of web devices,
+we can treat them as facets of the same experience. We can design for an optimal viewing
+experience, but embed standards-based technologies into our designs to make them not only more
+flexible, but more adaptive to the media that renders them. In short, we need to practice responsive
+web design.1
+—Ethan Marcotte, A List Apart
+
+[TODO] Viewports and Breakpoints
+
+Testing a responsive site
+==========================
+To test the responsive site you need to test it with different viewport configurations. Browsers like Google Chrome and Firefox make the life easy in this reagrd.
+
+Google chrome provides the "Emulation" tab to preselect the default device. 
+
+[TODO] More about the Emulation Tab
+
+Firefox also provides the responsive design mode that allows to test common viewport widths.
+
+[TODO] More about the firefox
+
+Testing on simulators
+iOS Simulator
+Android
+Firefox OS Simulator
+
+
+Testing on real devices
+
+Online Solutions
+	http://www.perfectomobile.com/
+	http://www.browserstack.com/
+	
+	
+Media Queries
+==============
+CSS Media Queries feature allows developer to target the specific CSS Style based on the device capabilities. Based on the viewport size you can define different CSS Style sheets that can be picked by browser.
+
+Media query can be split into two types of components
+	Media Types
+		1. all: all devices
+		2. aural: speech synthesizers
+		3. braille: braille tactile feedback devices
+		4. embossed: paged braille printers
+		5. handheld: small or handheld devices
+		6. print: printers
+		7. projection: projected presentations, like projectors and projected slides
+		8. screen: computer screens
+		9. tty: media using a fixed-pitch character grid, like teletypes and terminals
+		10. tv: television-type devices
+	Media Expressions
+		width | min-width | max-width
+		height | min-height | max-height
+		device-width | min-device-width | max-device-width
+		device-height | min-device-height | max-device-height
+		aspect-ratio | min-aspect-ratio | max-aspect-ratio
+		device-aspect-ratio | min-device-aspect-ratio | max-device-aspect-ratio
+		color | min-color | max-color
+		color-index | min-color-index | max-color-index
+		
+Syntax of Media Query
+	all and (max-width:767px)
+	
+Using Media Queries in CSS
+	1. Separate style sheets for each media query
+		<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1023px)" href="tablet.css" />
+	2. Use @import in the main CSS file to load CSS files conditionally
+		@import url("tablet.css") screen and (min-width: 768px) and (max-width: 1023px);
+	3. Use the media queries inside CSS file
+		@media only screen and (min-width: 768px) and (max-width: 1023px){
+			/* Your styles. */
+			}
+
+Page Layouts
+	Fixed Width Layout
+	Elastic Layouts
+	Fluid Layouts
+	
+	[TODO] [Example of each type]
+	
+
+Responsive Design Frameworks
+	Grid Systems
+		1. Fluidable (http://fluidable.com/)
+		2. CSS Smart Grid (http://dryan.github.io/css-smart-grid/)
+		3. csswizardry-grids (http://csswizardry.com/csswizardry-grids/)
+	CSS Frameworks
+		1. Twitter BootStrap
+		2. Zurb Foundation
+		
+		
+		

@@ -1,0 +1,46 @@
+<html>
+	<head>
+			<title>Responsive Web Design : Example Using Images in Columns</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<style>
+				.imgContainer{
+					    width : 98%;
+					    height : auto;
+					}
+					img{
+					    width : 96%;
+					    height : auto;
+
+					    border : solid;
+					}
+
+					@media (min-width: 420px){
+					img{
+					    width : 48%;
+					    height : auto;
+
+					    border : solid;
+					}
+					}
+
+					@media (min-width: 760px){
+					img{
+					    width : 24%;
+					    height : auto;
+
+					    border : solid;
+					}
+					}
+			</style>
+	</head>
+
+	<body>
+		<div class="imgContainer">
+		    <img src="http://pixabay.com/static/uploads/photo/2014/12/21/20/03/glacier-575141_640.jpg"/>
+		    <img src="http://pixabay.com/static/uploads/photo/2015/01/08/15/48/creek-593146_640.jpg"/>
+		    <img src="http://pixabay.com/static/uploads/photo/2015/01/08/14/10/river-593021_640.jpg"/>
+		    <img src="http://pixabay.com/static/uploads/photo/2014/12/17/20/50/poppy-571914_640.jpg"/>
+		</div>
+	</body>
+</html>

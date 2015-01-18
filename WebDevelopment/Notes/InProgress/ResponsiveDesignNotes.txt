@@ -69,8 +69,22 @@ Tools and Workflows
 	ios-sim : iOS Simulator
 	Mixture : Tools haveing scaffolding, preprocessing, testing, templating, building and deploying
 	
+
 	
+Web pages are getting bigget and bigger from HTTP Archive
+2http://www.webperformancetoday.com/2011/07/20/new-findings-mobile-web-users-are-more-disappointed-than-ever/.
+3http://www.webperformancetoday.com/2013/12/11/slower-web-pages-user-frustration/.
+4http://www.webperformancetoday.com/2011/07/20/new-findings-mobile-web-users-are-more-disappointed-than-ever/.
+5http://www.igvita.com/2012/07/19/latency-the-new-web-performance-bottleneck/.
+6http://chimera.labs.oreilly.com/books/1230000000545.
+
+
+ SpritePad (http://wearekiss.com/spritepad).
  
+ Domain Sharding
+ Pingdom Website Speed Test
+ YSlow
+ WebPageTest
 
 References
 1. http://en.wikipedia.org/wiki/Responsive_web_design

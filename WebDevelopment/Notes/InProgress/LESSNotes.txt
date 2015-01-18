@@ -1,0 +1,12 @@
+Less
+=======
+
+Usage
+====
+1. Install LESS as Node package using npm
+	npm install -g less
+2. Create a file .less
+3. Compile .less file into css file.
+	lessc styles.less > styles.css
+	
+	For compressed CSS use -x option
