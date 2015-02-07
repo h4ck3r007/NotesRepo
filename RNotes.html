@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> CSS3 : Text Formatting </title>
+		<title> R </title>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	</head>
@@ -9,57 +9,175 @@
 	<body>
 		<div class="container">
 			<div class="page-header">
-			  <h1>CSS3 Text Formating</h1>
+			  <h1>R [Partial]</h1>
 			</div>
 
 			<h3 class="heading">Introduction</h3>
 			<p>
-				Image is more than a thousand words but still text has their own importance. Text allows us to understand the thoughts we want to communicate. CSS provides the functionality to format the text on web page. We will discuss about how text on page can be formatted using CSS.
+				R system is software environment for statistical computing and graphics. R is open source and is maintained by developers.
 			</p>
-			<h3 class="heading">Fonts</h3>
+			<h3 class="heading">Installation</h3>
 			<p>
-				The font of the text on web page can be controlled through CSS using font-family, font-size, font-weight and font style property.
+				R can be installed from <a href="http://www.r-project.org/">official R website</a>. R provides "R console" to run R commands. There are other ways also to run R code. Here are the other ways to run R code.
+				<ui>
+					<li>RStudio : RStudio is free open source IDE for R. It can be downloaded from <a href="http://www.rstudio.org">http://www.rstudio.org</a></li>
+					<li>As a web application : The rApache software allows to run R into a web application. Details of this can be found from <a href="http://biostat.mc.vanderbilt.edu/rapache/">http://biostat.mc.vanderbilt.edu/rapache/</a></li>
+					<li>As a server : The RServer software allows you to access R from within other applications.</li>
+				</ui> 
 			</p>
+			<h3 class="heading">R Language</h3>
+			<h4 class="heading">Expressions</h4>
 			<p>
-				Using font family we can set the font for the text. If font is available on client browser then the text is displayed in the requested font otherwise default web font will be used. Using font family we can give not only single font but list of fonts. If first font is not available then browser will check for second font in the list on client's computer and if no font in list is available then default font will be used to display the text.
-			</p>
-			<p>
-				Here is example code to set the font for paragraph.
+				R code is composed of a series of expressions. R expression includes assignment statements, conditional statements and arithmetic expressions.
 			</p>
 			<div class="panel panel-primary">
 				<div class="panel-heading">
-				    <h3 class="panel-title">Code to set font face</h3>
+				    <h3 class="panel-title">Expressions in R</h3>
 				 </div>
 				 <div class="panel-body">
-				  <pre>p{
-	font-family : Arial, Helvetica, sans-serif;
-}
+				  <pre>&gt; x &lt;- 1 		# Assignment expression
+&gt; if(2 > 10) "yes" else "no" 		# Conditional expression
+[1] "no"
+&gt; 127%%10
+[1] 7
 				</pre>
 				 </div>
 			</div>
+			<h4 class="heading">Objects</h4>
 			<p>
-				Most recently web browsers also started supporting the web fonts. Web fonts are fonts that are downloaded by the browser from given location for use. Using font-face CSS property you can set the location for the font to be downloaded.
-			</p>
-			<p>
-				Here is example code to download web fonts
+				R code manipulates objetcs. R include numerical vectors, character vectors, lists and functions. Here are some example of objects.
 			</p>
 			<div class="panel panel-primary">
 				<div class="panel-heading">
-				    <h3 class="panel-title">Code to set web font face</h3>
+				    <h3 class="panel-title">Objects in R</h3>
 				 </div>
 				 <div class="panel-body">
-				   <pre>@font-face {
-	font-family: "League Gothic";
-	src: url('fonts/League_Gothic-webfont.ttf');
-}
-p {
-	font-family: "League Gothic";
-}
-				</pre>
+				  <pre>&gt;c(1,2,3,4,5)				#numerical vector
+[1] 1 2 3 4 5
+&gt; "This is an object too"				#character vector
+[1] "This is an object too"
+&gt; list(c(1,2,3,4,5), "This","That")
+[[1]]
+[1] 1 2 3 4 5
+[[2]]
+[1]"This"
+[[3]]
+[1] "That"
+&gt; function(x,y) {x+y}
+function(x,y) {x+y}				</pre>
 				 </div>
-				
-				
+			</div>
+			<h4 class="heading">Symbols/Variables</h4>
+			<p>
+				Variable names in R are called symbols. Objects can be assigned to variable using "&lt;-"
+			</p>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+				    <h3 class="panel-title">Variable Assignment in R</h3>
+				 </div>
+				 <div class="panel-body">
+				  <pre>&gt; x &lt;- 1
+[1] 1
+				  </pre>
+				 </div>
+			</div>
+			<h4 class="heading">Everything in R is an Object</h4>
+			<p>
+				Everything in R is an object : functions, symbols and R expressions.
+			</p>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+				    <h3 class="panel-title">Functions in R</h3>
+				 </div>
+				 <div class="panel-body">
+				  <pre>&gt; x &lt;- 1
+[1] 1
+&gt; sqrt &lt;- function(i) i^2
+&gt; sqrt(2)
+[1] 4
+				  </pre>
+				 </div>
+			</div>
+			<h4 class="heading">Special Values</h4>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+				    <h3 class="panel-title">Special Values in R</h3>
+				 </div>
+				 <div class="panel-body">
+				 	<ul>
+				 		<li>NA  : Not avilable</li>
+				 		<li>Inf,-Inf : Infinity and Not Infinity</li>
+				 		<li>NaN : Not a number</li>
+				 		<li>NULL</li>
+				 	</ul>
+				 </div>
+			</div>
+			<h4 class="heading">Coercion</h4>
+			<p>
+				When you call a function with an argument of the wrong type, R will try to coerce values to a different typeso that function will work.
+			</p>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+				    <h3 class="panel-title">Coercion in R</h3>
+				 </div>
+				 <div class="panel-body">
+				 	<pre>&gt; x &lt;- c(1,2,3,4,5)
+[1] 1 2 3 4 5
+&gt; typeof(x)
+[1] "double"
+&gt; x[2] &lt;- "hat"
+&gt; x
+[1] "1" "hat" "3" "4" "5"
+&gt; typeof(x)
+[1] "character"
+				 	</pre>
+				 </div>
+			</div>
+			<h4 class="heading">R Objects</h4>
+			<p>
+				Everything R are objects.Below are different types of objects in R.
+			</p>
+			<h4 class="heading">&nbsp;&nbsp;&nbsp;&nbsp;Vectors</h4>
+			<p>
+				Vector is the collection of same type of objects. Here is example to create the vector and extract element from vector.
+			</p>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+				    <h3 class="panel-title">Vectors</h3>
+				 </div>
+				 <div class="panel-body">
+				 	<pre>&gt; x &lt;- c(1,2,3,4,5)
+[1] 1 2 3 4 5
+&gt; x[2]
+[1] 2
+				 	</pre>
+				 </div>
+			</div>
+			<h4 class="heading">&nbsp;&nbsp;&nbsp;&nbsp;Lists</h4>
+			<p>
+				Lists is an ordered collection of objects. Here is example to create the lists and extract element from lists.
+			</p>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+				    <h3 class="panel-title">Lists</h3>
+				 </div>
+				 <div class="panel-body">
+				 	<pre>&gt; x &lt;- lists(1,2,3,4,5)
+[1] 1 2 3 4 5
+&gt; l[1]
+[[1]]
+[1] 1
+				 	</pre>
+				 </div>
+			</div>
+			<div>
+			References<br>
+			----------<br>
+			<ul>
+				<li><a href="http://www.oreilly.com/data/try-r/thanks.html">http://www.oreilly.com/data/try-r/thanks.html</a></li>
+			</ul>
 			</div>
 		</div>
+		
 	</body>
 </html>
