@@ -1,0 +1,31 @@
+Reading from property file in Java
+=====================================
+Properties prop = new Properties();
+		InputStream input = null;
+		try {
+			input = new FileInputStream("config.properties");
+			prop.load(input);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+
+		String searchBoxId = prop.getProperty("id");
+
+Get current directory path in Java
+==========================
+System.getProperty("user.dir");
+
+Scrolldown using Javascript
+==============================
+window.scrollBy(10000,10000);
+
+
+
+
+
+
+
+Scrapy framework : To Crawl the webpage

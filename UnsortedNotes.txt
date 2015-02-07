@@ -1,0 +1,123 @@
+Feb 6 ,2015
+==============
+Todo List
+-----------
+In Progress 1. Frontend Performance Sprint Report
+In Progress		2. UMS Performance Plan?
+3. BO/BI API Status
+4. Wiki for Hubzu 2.0
+In Progress	5. R from code school
+6. CSS Book
+7. QTest update for test cases
+
+=====
+[Coursera]
+
+Cloud Service Providers
+	Amazon EC2
+	Microsoft Azure
+	Google Compute Engine
+	Cloudra
+	
+	EC2: Elastic Compute Cloud
+	S3 : Simple Storage Service
+	EBS : Elastic Block Service
+	
+	
+
+
+=====
+[Selenium]
+WebDriver driver = new FirefoxDriver();
+driver.get("http://somedomain/url_that_delays_loading");
+WebElement myDynamicElement = (new WebDriverWait(driver, 10))
+  .until(ExpectedConditions.presenceOfElementLocated(By.id("myDynamicElement")));
+=====
+[Security Camera] http://www.securitysystemstore.in/Products/CCTV-Cameras-Wireless-Cameras/SSS/Wireless-CCTV-Camera-Color/pid-525038.aspx
+
+=====
+[Java Magazine]
+--> Explore Oracle Java Cloud Service
+	https://cloud.oracle.com/java
+	https://cloud.oracle.com/developer_service
+	
+	[Todo] Go through demo videos
+	[Todo] Solve problems from http://codekata.com/blog/archives/
+
+====
+[Office]
+Wiki Password Reset Link : http://crowd.hubzu.com/crowd/console/forgottenlogindetails!default.action
+Skillport : A16505/Poona@12
+
+[Google Doc for Core UI Changes] https://docs.google.com/spreadsheets/d/123j5bXD4SVH28JwkCRlDAcETLGDIgCASubiP-EvB5Xo/edit#gid=925176062
+
+[Todo] Prepare for monday demo for Performance
+
+====
+[Learning Plan]
+Dedicated time for technology.
+	Learn CSS	: 20 Hours By Mar 1,2015
+	
+====
+R programming
+
+References
+----------
+http://www.oreilly.com/data/try-r/thanks.html
+
+Variable Assignment :    x <- 4
+	variable can be assigned any value. Number or String, it does not matter.
+	
+Get help	: help(sum)
+Get example : example(sum)
+
+List files	: list.files()
+Read Source : source("filename.R")
+
+
+
+Data Structure in R : Vector --> List of values
+
+Creating vector : c(4,3,5)  --> c is shortcut for combine.
+Vector can hold values of same type. In case different types value is entered it will convert to one type.
+
+Fetch value from vector using index : vectorval[3]
+Vector index starts with 1.
+Assign names to vector instead of index : names(vectorval) <- c("first","second")
+
+
+Plotting vector	: barplot(vector)
+Plot graph : plot(x,y)
+
+
+Other data structure is Matrix
+Create a matrix : matrix(0,3,4)
+
+Plot matrix : contour(volcano)
+3D plot Matrix : persp(volcano,expan=0.2)
+create heatmap : image(volcano)
+
+Statistical Functions
+
+mean
+median
+sd
+
+Factors <- categorize the data
+
+Convert to integer
+	as.integer
+
+DataFrames : like database tables
+
+Accessing individual element using [[]] or $
+
+Reading data from file : read.csv
+
+Merging data frame : merge()
+
+Books
+=========
+1. R in Nutshell
+2. R Cookbook
+3. Exploring Everyday Things

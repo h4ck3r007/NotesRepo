@@ -1,0 +1,17 @@
+Stack Overflow and Stack Exchange
+==================================
+String To Binary : http://codegolf.stackexchange.com/questions/44830/string-to-binary
+Q. How to write code in least bytes?
+
+Pyth : A language used for code golfing. Every function , variable and statement in Pyth is single character.
+Reference 
+1. http://en.wikipedia.org/wiki/Code_golf
+2. http://esolangs.org/wiki/Pyth
+
+[TODO] Learn PYTH.
+---------------------------------------------------------------------
+
+Chess Problem : http://math.stackexchange.com/questions/1116801/where-can-the-knight-be
+http://i.stack.imgur.com/NZg2u.png
+----------------------------------------------------------------------
+
