@@ -1,6 +1,33 @@
-Firefox Add on : Measureit
-Chrome Inspector : Responsive Inspector   --> How media queries works? What is responsive design
-Emmet livestyle??
-Web developer checklist
-Devtool autosave  http://youtu.be/3pxf3Ju2row?t=18m24s
-Screencast: vimeo.com/33765496
+Notes To do List
+=================
+1. Firefox Addons 
+	--> Measureit
+2. Chrome Addons	
+	--> Responsive Inspector
+3. Web Developer Checklist
+4. Devtool
+	--> http://youtu.be/3pxf3Ju2row?t=18m24s
+	--> vimeo.com/33765496
+5. JVM Application Development Frameworks
+	--> Griffon : http://griffon.codehaus.org/
+	
+	
+	
+	
+	
+ToDo
+1. http://www2.pubnub.com/html5app?utm_source=html5weekly&utm_medium=email
+2. WebSocket : http://www.html5rocks.com/en/tutorials/websockets/basics/
+
+http://www.goodreads.com/quotes/tag/learning
+http://www.uniqueteachingresources.com/Quotes-About-Learning.html
+http://www.corejavainterviewquestions.com/idiots-guide-big-o/
+http://jaxenter.com/jax-magazine
+https://vaadin.com/blog/-/blogs/bdd-with-vaadin-testbench-4
+	
+	
+R Books
+=======
+1. R in Nutshell
+2. R Cookbook
+3. Exploring Everyday Things 

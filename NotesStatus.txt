@@ -1,0 +1,11 @@
+Notes Status
+============
+[Incomplete]RNotes
+[Incomplete]Web Speech API : A short primer --> Need to convert from text to HTML.
+[Incomplete]HTML5 Canvas : A short primer --> Need to convert from text to HTML.
+[Incomplete]Responsive Web Design --> Need to convert from text to HTML.
+[Incomplete]Bootstrap
+[Incomplete]CSS Notes
+[Incomplete]CSSTextFormatting
+[Incomplete]Less
+[Incomplete]Responsive Design
