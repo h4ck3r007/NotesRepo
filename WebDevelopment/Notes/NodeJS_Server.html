@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> NodeJS Server </title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="page-header">
+			  <h1>Running a server in NodeJS</h1>
+			</div>
+
+			<h3 class="heading">Node JS : Introduction</h3>
+			<p>
+				[TODO] Introduction to Node JS
+			</p>
+			<h3 class="heading">Server in Node JS</h3>
+			<p>
+				Running a server in Node JS is very easy.
+			</p>
+			<p>
+				A Node server is typically created using the createServer method of the http module. Method createServer return the server object. Once you get the server object start listining to some port.
+			</p>
+			<p>
+				Here is example code to run a simple server using Node JS.
+			</p>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+				    <h3 class="panel-title">Code to run Node JS Server</h3>
+				 </div>
+				 <div class="panel-body">
+				  <pre>var http = require('http');
+var server = http.createServer(function(request, response) {
+
+	console.log("Got Request Headers:");
+	console.log(request.headers);
+	response.writeHead(200, {
+		'Content-Type': 'text/plain'
+	});
+	response.write("PONG");
+	response.end();
+	
+});
+server.listen(8080);
+				</pre>
+				 </div>
+			</div>
+		</div>
+	</body>
+</html>

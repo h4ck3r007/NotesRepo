@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> React JS : Hello World </title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="page-header">
+			  <h1>Hello World in ReactJS</h1>
+			</div>
+
+			<h3 class="heading">React JS : Introduction</h3>
+			<p>
+				ReactJS is a javascript library for building UI for webpages. React is combiner effort from facebook and instagram. React can be used as <strong>V (View) under MVC</strong>. React uses <strong>virtual DOM</strong> diff implementation for high performance. The main focus for react is as soon as data changes on required UI portion is updated as quickly as possible.
+			</p>
+			<h3 class="heading">Running NodeJS server</h3>
+			<p>
+				Let's build hello world page using React JS. This page will simply show the "Hello World" on page. We will first start a server to host our files. We can use NodeJS server provided by react. This code can be downloaded from <a href="https://github.com/reactjs/react-tutorial/archive/master.zip">here</a> To start the server go to the folder and run server.js using node. If required use npm to download express and body-parser modules. Here is commands for doing so.
+			</p>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+				    <h3 class="panel-title">Code to run Node JS Server</h3>
+				 </div>
+				 <div class="panel-body">
+				  <pre>Command to install modules using npm.
+> npm install express
+> npm install body-parser
+
+Command to start node server
+> node server.js
+Server started: http://localhost:3000/
+				</pre>
+				</div>
+			</div>
+			<p>
+				This will start a server that will listen on port 3000.
+			</p>
+			<h3 class="heading">HTML Template for page</h3>
+			<p>
+				Let's build hello world page template. We need react javascript framework files. As react is dependent on jQuery so we also need to add jquery files. We are using JSX (XML-ish syntax in your JavaScript) so we will include javascript file to transport JSX into HTML. JSX is not must but make coding easy to read.
+			</p>
+			<p>
+				Here is the code for HTML template. We will update the div element with id 'content' using ReactJS.
+			</p>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+				    <h3 class="panel-title">HTML Template</h3>
+				 </div>
+				 <div class="panel-body">
+				  <pre>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello React&lt;/title&gt;
+    &lt;script src="http://fb.me/react-0.12.2.js"&gt;&lt;/script&gt;
+    &lt;script src="http://fb.me/JSXTransformer-0.12.2.js"&gt;&lt;/script&gt;
+    &lt;script src="http://code.jquery.com/jquery-1.10.0.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="content"&gt;&lt;/div&gt;
+    &lt;script type="text/jsx"&gt;
+      // Your code here
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+				</pre>
+			</div>
+		</div>
+		<h3 class="heading">React Code</h3>
+		<p>
+			Now we will update the div element to add one H1 tag having text "Hello World". React framework has global javascript object React. This javascript object has method render which takes the html and the element which need to be updated with the html. Code to add h1 tag inside div element using ReactJS is.
+		</p>
+		<div class="panel panel-primary">
+				<div class="panel-heading">
+				    <h3 class="panel-title">Render JavaScript Code</h3>
+				 </div>
+				 <div class="panel-body">
+				  <pre>React.render(
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;,
+        document.getElementById('content')
+      );
+				</pre>
+			</div>
+		</div>
+		<p>
+			This code need to be added in HTML template we have. Here is complete code for page. When this code will be rendered in browser will show Hello World.
+		</p>
+		<div class="panel panel-primary">
+				<div class="panel-heading">
+				    <h3 class="panel-title">Complete Page Code</h3>
+				 </div>
+				 <div class="panel-body">
+				  <pre>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Hello React&lt;/title&gt;
+    &lt;script src="http://fb.me/react-0.12.2.js"&gt;&lt;/script&gt;
+    &lt;script src="http://fb.me/JSXTransformer-0.12.2.js"&gt;&lt;/script&gt;
+    &lt;script src="http://code.jquery.com/jquery-1.10.0.min.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="content"&gt;&lt;/div&gt;
+    &lt;script type="text/jsx"&gt;
+      React.render(
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;,
+        document.getElementById('content')
+      );
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+				</pre>
+			</div>
+		</div>
+		
+		In next article we will pass the parameter to code.
+	</body>
+</html>

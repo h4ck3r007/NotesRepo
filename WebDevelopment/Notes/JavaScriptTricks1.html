@@ -1,0 +1,55 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<title> JavaScript Trick #1 : Copy to clipboard </title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="page-header">
+			  <h1>JavaScript Trick #1 : Copy to clipboard </h1>
+			</div>
+
+			<h3 class="heading">Clipboard Copy</h3>
+			<p>
+				We can run any JavaScript in console but if you are looking to copy the output of JavaScript to other file, JavaScript provide the copy function which takes the String parameter and store this to clipboard.
+			</p>
+			<h3 class="heading">Copy JavaScript Function</h3>
+			<p>
+				This will copy the String "Hello" on clipboard. You can paste the string in notepad by pressing ctrl+v.
+				
+
+				<div class="panel panel-primary">
+				<div class="panel-heading">
+				    <h3 class="panel-title">Copy JavaScript Function</h3>
+				 </div>
+				 <div class="panel-body">
+				  <pre>copy("Hello");</pre>
+				 </div>
+			</p>	
+			
+			</div>
+			<h3 class="heading">Clipboard Copy Example</h3>
+			<p>
+				Following code will print the square of one digit numbers.
+			</p>
+
+				<div class="panel panel-primary">
+				<div class="panel-heading">
+				    <h3 class="panel-title">Clipboard Copy Example Code</h3>
+				 </div>
+				 <div class="panel-body">
+				  <pre>var sqrStr="";
+for(var i=0;i<10;i++){
+	sqrStr += (i + "-->"+ (i*i)+"\n");
+};
+copy(sqrStr);</pre>
+				 </div>
+			</p>	
+			
+		</div>
+		
+	</body>
+</html>

@@ -9,3 +9,10 @@ Notes Status
 [Incomplete]CSSTextFormatting
 [Incomplete]Less
 [Incomplete]Responsive Design
+
+
+
+
+
+[Complete]Nodejs_Server : Running a server in NodeJS
+[Complete]ReactJS_HelloWorld : Hello World in ReactJS
