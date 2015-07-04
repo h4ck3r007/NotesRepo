@@ -1,0 +1,43 @@
+Python
+======
+
+Introduction
+============
+
+
+
+
+
+Cook Book
+=========
+1. How to connect to remote server.
+
+ANS : Use socket to connect to the remote server. Here are steps.
+	1. Create a socket.
+	2. Connect to given IP and port
+	3. Receive the response back.
+
+	Here is the code 
+	
+	================================================1
+	import socket;
+
+	s = socket.socket();
+	s.connect(("time-a.nist.gov",13));
+	banner = s.recv(1024);
+	print banner;
+	================================================1
+
+
+References :
+
+
+Books :
+
+
+
+ToDo:
+1. Single Utility for doing
+	--> Pwd Craching linux file
+	--> Telnet
+	--> Password cracking zip file based on dictionary.

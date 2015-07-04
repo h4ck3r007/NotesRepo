@@ -1,0 +1,6 @@
+1. [MAC][ZIP][Encryption] How to add password to zip file on MAC
+
+ANS :  Use -e switch in zip command
+	zip -e pwdfile.zip ./*
+
+
